@@ -1,0 +1,13 @@
+.toggle {
+  background-color: var(--primary-100);
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px var(--primary-200), -2px -2px 4px var(--primary-100);
+  cursor: pointer;
+}
+
+.toggle:is(:hover, :active) {
+  box-shadow: inset 2px 2px 4px var(--primary-200),
+    inset -2px -2px 4px var(--primary-100);
+}

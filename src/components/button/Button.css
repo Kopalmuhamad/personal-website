@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-weight: var(--fw-normal);
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 2px 2px 4px var(--primary-100), -2px -2px 4px var(--primary-200);
+  background-color: var(--primary-100);
+}
+
+.button:is(:hover, :active) {
+  box-shadow: inset 2px 2px 4px var(--primary-100),
+    inset -2px -2px 4px var(--primary-200);
+}

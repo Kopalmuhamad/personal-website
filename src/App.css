@@ -1,0 +1,97 @@
+:root {
+  --font-text: "Poppins", sans-serif;
+  --font-title: "Tilt Neon", sans-serif;
+
+  --primary-100: #8b5fbf;
+  --primary-200: #61398f;
+  --primary-300: #ffffff;
+  --accent-100: #d6c6e1;
+  --accent-200: #9a73b5;
+  --text-100: #4a4a4a;
+  --text-200: #878787;
+  --bg-100: #f5f3f7;
+  --bg-200: #e9e4ed;
+  --bg-300: #ffffff;
+
+  --fs-xs: 0.897rem;
+  --fs-s: 1.1rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 1.9rem;
+  --fs-max-size: 2.5rem;
+
+  --fw-light: 300;
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-bolder: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none !important;
+  text-decoration: none;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--bg-100);
+  font-family: var(--font-text);
+  color: var(--text-100);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  font-size: var(--fs-max-size);
+  font-family: var(--font-title);
+  color: var(--text-100);
+  z-index: 999;
+}
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+  }
+
+  100% {
+  }
+}
+
+@keyframes slideDown {
+  0% {
+  }
+
+  100% {
+  }
+}

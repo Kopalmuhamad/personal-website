@@ -1,0 +1,100 @@
+.contact-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.section-title.contact {
+  margin-bottom: 3rem;
+}
+
+.section-title.contact::before {
+  content: "Contact";
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-family: var(--font-title);
+  color: var(--text-100);
+  opacity: 0.6;
+}
+
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  background-color: var(--primary-300);
+  box-shadow: 2px 2px 4px var(--text-100), -2px -2px 4px var(--text-200);
+}
+
+.box-input {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.box-input input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 2px solid var(--primary-100);
+  outline: none;
+  padding: 0 1.5rem;
+  font-size: var(--fs-s);
+  color: var(--text-100);
+  background-color: transparent;
+}
+
+.box-input input:focus {
+  background-color: var(--accent-100);
+}
+
+.box-input input::placeholder {
+  letter-spacing: 1px;
+}
+
+.box-input label {
+  font-size: var(--fs-s);
+  font-family: var(--font-title);
+  font-weight: var(--fw-normal);
+}
+
+.box-input textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border-bottom: 2px solid var(--primary-100);
+  font-size: var(--fs-s);
+  color: var(--text-100);
+}
+
+.box-input textarea:focus {
+  background-color: var(--accent-100);
+}
+
+@media screen and (max-width: 425px) {
+  .box-input input::placeholder {
+    font-size: 0.789rem;
+  }
+
+  .box-input input {
+    font-size: 0.789rem;
+  }
+
+  .box-input textarea::placeholder {
+    font-size: 0.789rem;
+  }
+}
